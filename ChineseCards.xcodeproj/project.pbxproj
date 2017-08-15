@@ -14,8 +14,6 @@
 		0A2FEBF11F41FB8F00C5192D /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBDE1F41FB8F00C5192D /* CourseViewController.swift */; };
 		0A2FEBF21F41FB8F00C5192D /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBDF1F41FB8F00C5192D /* CardListViewController.swift */; };
 		0A2FEBF31F41FB8F00C5192D /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE01F41FB8F00C5192D /* AddViewController.swift */; };
-		0A2FEBF41F41FB8F00C5192D /* SelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE11F41FB8F00C5192D /* SelectImageViewController.swift */; };
-		0A2FEBF51F41FB8F00C5192D /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE21F41FB8F00C5192D /* EmailViewController.swift */; };
 		0A2FEBF61F41FB8F00C5192D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE31F41FB8F00C5192D /* Main.storyboard */; };
 		0A2FEBF71F41FB8F00C5192D /* JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE41F41FB8F00C5192D /* JSONSerializable.swift */; };
 		0A2FEBF81F41FB8F00C5192D /* CourseStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE51F41FB8F00C5192D /* CourseStruct.swift */; };
@@ -60,8 +58,6 @@
 		0A2FEBDE1F41FB8F00C5192D /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 		0A2FEBDF1F41FB8F00C5192D /* CardListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
 		0A2FEBE01F41FB8F00C5192D /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		0A2FEBE11F41FB8F00C5192D /* SelectImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectImageViewController.swift; sourceTree = "<group>"; };
-		0A2FEBE21F41FB8F00C5192D /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		0A2FEBE31F41FB8F00C5192D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0A2FEBE41F41FB8F00C5192D /* JSONSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializable.swift; sourceTree = "<group>"; };
 		0A2FEBE51F41FB8F00C5192D /* CourseStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseStruct.swift; sourceTree = "<group>"; };
@@ -129,8 +125,6 @@
 				0A2FEBDE1F41FB8F00C5192D /* CourseViewController.swift */,
 				0A2FEBDF1F41FB8F00C5192D /* CardListViewController.swift */,
 				0A2FEBE01F41FB8F00C5192D /* AddViewController.swift */,
-				0A2FEBE11F41FB8F00C5192D /* SelectImageViewController.swift */,
-				0A2FEBE21F41FB8F00C5192D /* EmailViewController.swift */,
 				0A2FEBE31F41FB8F00C5192D /* Main.storyboard */,
 				0A2FEBE41F41FB8F00C5192D /* JSONSerializable.swift */,
 				0A2FEBE51F41FB8F00C5192D /* CourseStruct.swift */,
@@ -311,11 +305,9 @@
 				0A2FEBF31F41FB8F00C5192D /* AddViewController.swift in Sources */,
 				0A2FEBF21F41FB8F00C5192D /* CardListViewController.swift in Sources */,
 				0A2FEBF71F41FB8F00C5192D /* JSONSerializable.swift in Sources */,
-				0A2FEBF41F41FB8F00C5192D /* SelectImageViewController.swift in Sources */,
 				0A2FEBF91F41FB8F00C5192D /* AudioUtil.swift in Sources */,
 				0A2FEBF01F41FB8F00C5192D /* GradeViewController.swift in Sources */,
 				0A2FEBEF1F41FB8F00C5192D /* ViewController.swift in Sources */,
-				0A2FEBF51F41FB8F00C5192D /* EmailViewController.swift in Sources */,
 				0A2FEBF81F41FB8F00C5192D /* CourseStruct.swift in Sources */,
 				0A2FEBF11F41FB8F00C5192D /* CourseViewController.swift in Sources */,
 				0A2FEBFA1F41FB8F00C5192D /* JSONFileUtil.swift in Sources */,
@@ -555,6 +547,7 @@
 				0A2FEBD51F41FB5300C5192D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A2FEBD61F41FB5300C5192D /* Build configuration list for PBXNativeTarget "ChineseCardsTests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +556,7 @@
 				0A2FEBD81F41FB5300C5192D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A2FEBD91F41FB5300C5192D /* Build configuration list for PBXNativeTarget "ChineseCardsUITests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +565,7 @@
 				0A2FEBDB1F41FB5300C5192D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
