@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ChineseCards
+//  tableViewTest
 //
-//  Created by Kevin Zhou on 8/14/17.
+//  Created by Kevin Zhou on 8/11/17.
 //  Copyright © 2017 Kevin Zhou. All rights reserved.
 //
 

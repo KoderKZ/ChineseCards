@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A2FEBAF1F41FB5300C5192D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBAE1F41FB5300C5192D /* AppDelegate.swift */; };
-		0A2FEBB11F41FB5300C5192D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBB01F41FB5300C5192D /* ViewController.swift */; };
-		0A2FEBB41F41FB5300C5192D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBB21F41FB5300C5192D /* Main.storyboard */; };
-		0A2FEBB61F41FB5300C5192D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBB51F41FB5300C5192D /* Assets.xcassets */; };
-		0A2FEBB91F41FB5300C5192D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBB71F41FB5300C5192D /* LaunchScreen.storyboard */; };
 		0A2FEBC41F41FB5300C5192D /* ChineseCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBC31F41FB5300C5192D /* ChineseCardsTests.swift */; };
 		0A2FEBCF1F41FB5300C5192D /* ChineseCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBCE1F41FB5300C5192D /* ChineseCardsUITests.swift */; };
+		0A2FEBEF1F41FB8F00C5192D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBDC1F41FB8F00C5192D /* ViewController.swift */; };
+		0A2FEBF01F41FB8F00C5192D /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBDD1F41FB8F00C5192D /* GradeViewController.swift */; };
+		0A2FEBF11F41FB8F00C5192D /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBDE1F41FB8F00C5192D /* CourseViewController.swift */; };
+		0A2FEBF21F41FB8F00C5192D /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBDF1F41FB8F00C5192D /* CardListViewController.swift */; };
+		0A2FEBF31F41FB8F00C5192D /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE01F41FB8F00C5192D /* AddViewController.swift */; };
+		0A2FEBF41F41FB8F00C5192D /* SelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE11F41FB8F00C5192D /* SelectImageViewController.swift */; };
+		0A2FEBF51F41FB8F00C5192D /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE21F41FB8F00C5192D /* EmailViewController.swift */; };
+		0A2FEBF61F41FB8F00C5192D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE31F41FB8F00C5192D /* Main.storyboard */; };
+		0A2FEBF71F41FB8F00C5192D /* JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE41F41FB8F00C5192D /* JSONSerializable.swift */; };
+		0A2FEBF81F41FB8F00C5192D /* CourseStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE51F41FB8F00C5192D /* CourseStruct.swift */; };
+		0A2FEBF91F41FB8F00C5192D /* AudioUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE61F41FB8F00C5192D /* AudioUtil.swift */; };
+		0A2FEBFA1F41FB8F00C5192D /* JSONFileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE71F41FB8F00C5192D /* JSONFileUtil.swift */; };
+		0A2FEBFB1F41FB8F00C5192D /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE81F41FB8F00C5192D /* test.json */; };
+		0A2FEBFC1F41FB8F00C5192D /* microphoneRecording.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE91F41FB8F00C5192D /* microphoneRecording.png */; };
+		0A2FEBFD1F41FB8F00C5192D /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBEA1F41FB8F00C5192D /* microphone.png */; };
+		0A2FEBFE1F41FB8F00C5192D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBEB1F41FB8F00C5192D /* AppDelegate.swift */; };
+		0A2FEBFF1F41FB8F00C5192D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBEC1F41FB8F00C5192D /* Assets.xcassets */; };
+		0A2FEC001F41FB8F00C5192D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBED1F41FB8F00C5192D /* LaunchScreen.storyboard */; };
+		0A2FEC011F41FB8F00C5192D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBEE1F41FB8F00C5192D /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +49,31 @@
 
 /* Begin PBXFileReference section */
 		0A2FEBAB1F41FB5300C5192D /* ChineseCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChineseCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A2FEBAE1F41FB5300C5192D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A2FEBB01F41FB5300C5192D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0A2FEBB31F41FB5300C5192D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0A2FEBB51F41FB5300C5192D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0A2FEBB81F41FB5300C5192D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0A2FEBBA1F41FB5300C5192D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A2FEBBF1F41FB5300C5192D /* ChineseCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChineseCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A2FEBC31F41FB5300C5192D /* ChineseCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseCardsTests.swift; sourceTree = "<group>"; };
 		0A2FEBC51F41FB5300C5192D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A2FEBCA1F41FB5300C5192D /* ChineseCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChineseCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A2FEBCE1F41FB5300C5192D /* ChineseCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseCardsUITests.swift; sourceTree = "<group>"; };
 		0A2FEBD01F41FB5300C5192D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A2FEBDC1F41FB8F00C5192D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A2FEBDD1F41FB8F00C5192D /* GradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeViewController.swift; sourceTree = "<group>"; };
+		0A2FEBDE1F41FB8F00C5192D /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		0A2FEBDF1F41FB8F00C5192D /* CardListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
+		0A2FEBE01F41FB8F00C5192D /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		0A2FEBE11F41FB8F00C5192D /* SelectImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectImageViewController.swift; sourceTree = "<group>"; };
+		0A2FEBE21F41FB8F00C5192D /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		0A2FEBE31F41FB8F00C5192D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0A2FEBE41F41FB8F00C5192D /* JSONSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONSerializable.swift; sourceTree = "<group>"; };
+		0A2FEBE51F41FB8F00C5192D /* CourseStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseStruct.swift; sourceTree = "<group>"; };
+		0A2FEBE61F41FB8F00C5192D /* AudioUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioUtil.swift; sourceTree = "<group>"; };
+		0A2FEBE71F41FB8F00C5192D /* JSONFileUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONFileUtil.swift; sourceTree = "<group>"; };
+		0A2FEBE81F41FB8F00C5192D /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		0A2FEBE91F41FB8F00C5192D /* microphoneRecording.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphoneRecording.png; sourceTree = "<group>"; };
+		0A2FEBEA1F41FB8F00C5192D /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
+		0A2FEBEB1F41FB8F00C5192D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A2FEBEC1F41FB8F00C5192D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A2FEBED1F41FB8F00C5192D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A2FEBEE1F41FB8F00C5192D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +124,25 @@
 		0A2FEBAD1F41FB5300C5192D /* ChineseCards */ = {
 			isa = PBXGroup;
 			children = (
-				0A2FEBAE1F41FB5300C5192D /* AppDelegate.swift */,
-				0A2FEBB01F41FB5300C5192D /* ViewController.swift */,
-				0A2FEBB21F41FB5300C5192D /* Main.storyboard */,
-				0A2FEBB51F41FB5300C5192D /* Assets.xcassets */,
-				0A2FEBB71F41FB5300C5192D /* LaunchScreen.storyboard */,
-				0A2FEBBA1F41FB5300C5192D /* Info.plist */,
+				0A2FEBDC1F41FB8F00C5192D /* ViewController.swift */,
+				0A2FEBDD1F41FB8F00C5192D /* GradeViewController.swift */,
+				0A2FEBDE1F41FB8F00C5192D /* CourseViewController.swift */,
+				0A2FEBDF1F41FB8F00C5192D /* CardListViewController.swift */,
+				0A2FEBE01F41FB8F00C5192D /* AddViewController.swift */,
+				0A2FEBE11F41FB8F00C5192D /* SelectImageViewController.swift */,
+				0A2FEBE21F41FB8F00C5192D /* EmailViewController.swift */,
+				0A2FEBE31F41FB8F00C5192D /* Main.storyboard */,
+				0A2FEBE41F41FB8F00C5192D /* JSONSerializable.swift */,
+				0A2FEBE51F41FB8F00C5192D /* CourseStruct.swift */,
+				0A2FEBE61F41FB8F00C5192D /* AudioUtil.swift */,
+				0A2FEBE71F41FB8F00C5192D /* JSONFileUtil.swift */,
+				0A2FEBE81F41FB8F00C5192D /* test.json */,
+				0A2FEBE91F41FB8F00C5192D /* microphoneRecording.png */,
+				0A2FEBEA1F41FB8F00C5192D /* microphone.png */,
+				0A2FEBEB1F41FB8F00C5192D /* AppDelegate.swift */,
+				0A2FEBEC1F41FB8F00C5192D /* Assets.xcassets */,
+				0A2FEBED1F41FB8F00C5192D /* LaunchScreen.storyboard */,
+				0A2FEBEE1F41FB8F00C5192D /* Info.plist */,
 			);
 			path = ChineseCards;
 			sourceTree = "<group>";
@@ -194,6 +234,7 @@
 					0A2FEBAA1F41FB5300C5192D = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = L8XDXNFNKF;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					0A2FEBBE1F41FB5300C5192D = {
@@ -235,9 +276,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A2FEBB91F41FB5300C5192D /* LaunchScreen.storyboard in Resources */,
-				0A2FEBB61F41FB5300C5192D /* Assets.xcassets in Resources */,
-				0A2FEBB41F41FB5300C5192D /* Main.storyboard in Resources */,
+				0A2FEBF61F41FB8F00C5192D /* Main.storyboard in Resources */,
+				0A2FEBFD1F41FB8F00C5192D /* microphone.png in Resources */,
+				0A2FEBFC1F41FB8F00C5192D /* microphoneRecording.png in Resources */,
+				0A2FEC001F41FB8F00C5192D /* LaunchScreen.storyboard in Resources */,
+				0A2FEBFB1F41FB8F00C5192D /* test.json in Resources */,
+				0A2FEBFF1F41FB8F00C5192D /* Assets.xcassets in Resources */,
+				0A2FEC011F41FB8F00C5192D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +307,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A2FEBB11F41FB5300C5192D /* ViewController.swift in Sources */,
-				0A2FEBAF1F41FB5300C5192D /* AppDelegate.swift in Sources */,
+				0A2FEBFE1F41FB8F00C5192D /* AppDelegate.swift in Sources */,
+				0A2FEBF31F41FB8F00C5192D /* AddViewController.swift in Sources */,
+				0A2FEBF21F41FB8F00C5192D /* CardListViewController.swift in Sources */,
+				0A2FEBF71F41FB8F00C5192D /* JSONSerializable.swift in Sources */,
+				0A2FEBF41F41FB8F00C5192D /* SelectImageViewController.swift in Sources */,
+				0A2FEBF91F41FB8F00C5192D /* AudioUtil.swift in Sources */,
+				0A2FEBF01F41FB8F00C5192D /* GradeViewController.swift in Sources */,
+				0A2FEBEF1F41FB8F00C5192D /* ViewController.swift in Sources */,
+				0A2FEBF51F41FB8F00C5192D /* EmailViewController.swift in Sources */,
+				0A2FEBF81F41FB8F00C5192D /* CourseStruct.swift in Sources */,
+				0A2FEBF11F41FB8F00C5192D /* CourseViewController.swift in Sources */,
+				0A2FEBFA1F41FB8F00C5192D /* JSONFileUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,25 +352,6 @@
 			targetProxy = 0A2FEBCB1F41FB5300C5192D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0A2FEBB21F41FB5300C5192D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A2FEBB31F41FB5300C5192D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0A2FEBB71F41FB5300C5192D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A2FEBB81F41FB5300C5192D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0A2FEBD11F41FB5300C5192D /* Debug */ = {
@@ -417,11 +453,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L8XDXNFNKF;
 				INFOPLIST_FILE = ChineseCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = us.happybunny.ChineseCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -430,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = L8XDXNFNKF;
 				INFOPLIST_FILE = ChineseCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
