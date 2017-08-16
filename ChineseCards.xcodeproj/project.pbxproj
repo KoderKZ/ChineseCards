@@ -19,7 +19,6 @@
 		0A2FEBF81F41FB8F00C5192D /* CourseStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE51F41FB8F00C5192D /* CourseStruct.swift */; };
 		0A2FEBF91F41FB8F00C5192D /* AudioUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE61F41FB8F00C5192D /* AudioUtil.swift */; };
 		0A2FEBFA1F41FB8F00C5192D /* JSONFileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE71F41FB8F00C5192D /* JSONFileUtil.swift */; };
-		0A2FEBFB1F41FB8F00C5192D /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE81F41FB8F00C5192D /* test.json */; };
 		0A2FEBFC1F41FB8F00C5192D /* microphoneRecording.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBE91F41FB8F00C5192D /* microphoneRecording.png */; };
 		0A2FEBFD1F41FB8F00C5192D /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2FEBEA1F41FB8F00C5192D /* microphone.png */; };
 		0A2FEBFE1F41FB8F00C5192D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FEBEB1F41FB8F00C5192D /* AppDelegate.swift */; };
@@ -63,7 +62,6 @@
 		0A2FEBE51F41FB8F00C5192D /* CourseStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseStruct.swift; sourceTree = "<group>"; };
 		0A2FEBE61F41FB8F00C5192D /* AudioUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioUtil.swift; sourceTree = "<group>"; };
 		0A2FEBE71F41FB8F00C5192D /* JSONFileUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONFileUtil.swift; sourceTree = "<group>"; };
-		0A2FEBE81F41FB8F00C5192D /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		0A2FEBE91F41FB8F00C5192D /* microphoneRecording.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphoneRecording.png; sourceTree = "<group>"; };
 		0A2FEBEA1F41FB8F00C5192D /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
 		0A2FEBEB1F41FB8F00C5192D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 				0A2FEBE51F41FB8F00C5192D /* CourseStruct.swift */,
 				0A2FEBE61F41FB8F00C5192D /* AudioUtil.swift */,
 				0A2FEBE71F41FB8F00C5192D /* JSONFileUtil.swift */,
-				0A2FEBE81F41FB8F00C5192D /* test.json */,
 				0A2FEBE91F41FB8F00C5192D /* microphoneRecording.png */,
 				0A2FEBEA1F41FB8F00C5192D /* microphone.png */,
 				0A2FEBEB1F41FB8F00C5192D /* AppDelegate.swift */,
@@ -274,7 +271,6 @@
 				0A2FEBFD1F41FB8F00C5192D /* microphone.png in Resources */,
 				0A2FEBFC1F41FB8F00C5192D /* microphoneRecording.png in Resources */,
 				0A2FEC001F41FB8F00C5192D /* LaunchScreen.storyboard in Resources */,
-				0A2FEBFB1F41FB8F00C5192D /* test.json in Resources */,
 				0A2FEBFF1F41FB8F00C5192D /* Assets.xcassets in Resources */,
 				0A2FEC011F41FB8F00C5192D /* Info.plist in Resources */,
 			);
