@@ -9,25 +9,17 @@
 import Foundation
 import UIKit
 import os.log
-class GradeViewController: UIViewController {
+class GradeViewController: UIViewController,UINavigationControllerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationItem.title = "Select Grade"
-//        let bundle = Bundle.main
-//        let path = bundle.path(forResource: "test", ofType: "json")
-//        do{
-//            if let data = data,
-//                let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
-//                let blogs = json["blogs"] as? [[String: Any]] {
-//                for blog in blogs {
-//                    if let name = blog["name"] as? String {
-//                        names.append(name)
-//                    }
-//                }
-//            }
-//        }catch{
-//            NSLog("something went wrong")
-//        }
+        self.navigationController?.delegate = self
+
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! CourseViewController
+        vc.setGradeName(name: segue.identifier!)
+    }
+
 }

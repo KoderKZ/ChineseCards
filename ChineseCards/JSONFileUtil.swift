@@ -9,6 +9,37 @@
 import Foundation
 
 class JSONFileUtil{
+    static func saveGradeToFile(grade:Grade){
+        if let json = grade.toJSON(){
+            NSLog(json)
+            let dict = convertToDictionary(text: json)
+            let documents = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
+            let writePath = documents.appendingPathComponent("\(grade.gradeName).json")
+            NSLog(writePath)
+            let rawData: NSData!
+            
+            if JSONSerialization.isValidJSONObject(dict!) { // True
+                do {
+                    rawData = try JSONSerialization.data(withJSONObject: dict!, options: .prettyPrinted) as NSData
+                    try rawData.write(toFile: writePath, options: .atomic)
+                    NSLog(writePath)
+                } catch {
+                    NSLog("error")
+                }
+            }
+        }
+    }
+    
+    static func deleteClass(className:String){
+        let documents = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
+        let writePath = documents.appendingPathComponent("\(className).json")
+        if !FileManager.default.fileExists(atPath: writePath){
+            do{
+                try FileManager.default.removeItem(atPath: writePath)
+            }catch{}
+        }
+    }
+    
     static func saveCourseToFile(course:Course){
         if let json = course.toJSON(){
             NSLog(json)
@@ -39,6 +70,25 @@ class JSONFileUtil{
             }
         }
         return nil
+    }
+    
+    static func readGradeFromFile(gradeName:String) -> Grade{
+        let documents = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
+        let writePath = documents.appendingPathComponent("\(gradeName).json")
+        if !FileManager.default.fileExists(atPath: writePath){
+            let grade = Grade(gradeName: gradeName, classes: NSMutableArray())
+            JSONFileUtil.saveGradeToFile(grade: grade)
+        }
+        let jsonData = NSData(contentsOfFile: writePath)
+        do{
+            let jsonDict = try JSONSerialization.jsonObject(with: jsonData! as Data, options: .mutableContainers) as! NSDictionary
+            let grade = Grade(gradeName: jsonDict.object(forKey: "gradeName") as! String, classes: jsonDict.object(forKey: "classes") as! NSMutableArray)
+            return grade
+        }catch{
+            //error
+        }
+        let grade = Grade(gradeName: "", classes: NSMutableArray())
+        return grade
     }
     
     static func readCourseFromFile(courseName:String) -> Course{

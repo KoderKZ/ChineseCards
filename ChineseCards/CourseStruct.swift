@@ -12,7 +12,10 @@ public struct Course:JSONSerializable{
     var courseName:String
     var cards:NSMutableArray
 }
-
+public struct Grade:JSONSerializable{
+    var gradeName:String
+    var classes:NSMutableArray
+}
 public struct FlashCard:JSONSerializable{
     var chinese:String
     var english:String

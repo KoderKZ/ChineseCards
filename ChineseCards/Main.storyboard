@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,7 +35,7 @@
                                 <color key="backgroundColor" red="0.80569948186528495" green="0.80569948186528495" blue="0.80569948186528495" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Fourth Grade"/>
                                 <connections>
-                                    <segue destination="aoP-NO-FGO" kind="show" id="1MB-WH-PrN"/>
+                                    <segue destination="aoP-NO-FGO" kind="show" identifier="fourthGrade" id="1MB-WH-PrN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,39 +83,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTA-LJ-vms">
-                                <rect key="frame" x="80" y="429" width="215" height="97"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czM-5d-VXH">
+                                <rect key="frame" x="242" y="72" width="108" height="56"/>
                                 <color key="backgroundColor" red="0.80569948189999996" green="0.80569948189999996" blue="0.80569948189999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="97" id="XpQ-XB-ABb"/>
+                                    <constraint firstAttribute="width" constant="108" id="kg3-nK-7lu"/>
                                 </constraints>
-                                <state key="normal" title="Course 2"/>
+                                <state key="normal" title="Add Class"/>
                                 <connections>
-                                    <segue destination="o7K-m4-yKe" kind="show" identifier="Course2" id="UiG-QV-ToB"/>
+                                    <action selector="addClassTapped:" destination="aoP-NO-FGO" eventType="touchUpInside" id="GjC-QQ-NPh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaD-6g-68O">
-                                <rect key="frame" x="80" y="214" width="215" height="97"/>
-                                <color key="backgroundColor" red="0.80569948189999996" green="0.80569948189999996" blue="0.80569948189999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="97" id="u8E-5l-om5"/>
-                                </constraints>
-                                <state key="normal" title="Course 1"/>
-                                <connections>
-                                    <segue destination="o7K-m4-yKe" kind="show" identifier="Course1" id="tqU-k3-Lbi"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Class Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0MJ-Y7-FL8">
+                                <rect key="frame" x="25" y="86" width="200" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IMn-7j-CTQ">
+                                <rect key="frame" x="0.0" y="136" width="375" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eaD-6g-68O" firstAttribute="leading" secondItem="UVi-vy-4Nj" secondAttribute="leadingMargin" constant="64" id="4TC-jn-l9a"/>
-                            <constraint firstItem="eaD-6g-68O" firstAttribute="leading" secondItem="sTA-LJ-vms" secondAttribute="leading" id="BEq-EA-ftU"/>
-                            <constraint firstItem="cEP-vj-JnA" firstAttribute="top" secondItem="sTA-LJ-vms" secondAttribute="bottom" constant="141" id="QwW-zu-bZT"/>
-                            <constraint firstItem="eaD-6g-68O" firstAttribute="trailing" secondItem="sTA-LJ-vms" secondAttribute="trailing" id="TZr-f0-f0W"/>
-                            <constraint firstItem="eaD-6g-68O" firstAttribute="centerX" secondItem="UVi-vy-4Nj" secondAttribute="centerX" id="gaa-ds-eZd"/>
-                            <constraint firstItem="eaD-6g-68O" firstAttribute="top" secondItem="P4w-fV-Oe8" secondAttribute="bottom" constant="150" id="sqc-YB-O62"/>
+                            <constraint firstAttribute="trailing" secondItem="IMn-7j-CTQ" secondAttribute="trailing" id="1FM-qr-zTZ"/>
+                            <constraint firstItem="IMn-7j-CTQ" firstAttribute="top" secondItem="czM-5d-VXH" secondAttribute="bottom" constant="8" symbolic="YES" id="5Bi-Oj-EjZ"/>
+                            <constraint firstItem="czM-5d-VXH" firstAttribute="leading" secondItem="0MJ-Y7-FL8" secondAttribute="trailing" constant="17" id="Cqx-sT-o9W"/>
+                            <constraint firstItem="0MJ-Y7-FL8" firstAttribute="baseline" secondItem="czM-5d-VXH" secondAttribute="firstBaseline" id="Ju8-Wj-Vjx"/>
+                            <constraint firstItem="IMn-7j-CTQ" firstAttribute="bottom" secondItem="cEP-vj-JnA" secondAttribute="top" id="YZU-QQ-qoK"/>
+                            <constraint firstItem="IMn-7j-CTQ" firstAttribute="leading" secondItem="UVi-vy-4Nj" secondAttribute="leading" id="cvS-gA-ro8"/>
+                            <constraint firstItem="IMn-7j-CTQ" firstAttribute="top" secondItem="0MJ-Y7-FL8" secondAttribute="bottom" constant="20" id="fiW-ki-OmY"/>
+                            <constraint firstItem="0MJ-Y7-FL8" firstAttribute="baseline" secondItem="czM-5d-VXH" secondAttribute="baseline" id="hZS-kr-0rZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="czM-5d-VXH" secondAttribute="trailing" constant="9" id="jx4-fc-EQr"/>
+                            <constraint firstItem="0MJ-Y7-FL8" firstAttribute="leading" secondItem="UVi-vy-4Nj" secondAttribute="leadingMargin" constant="9" id="qZY-Ul-PIs"/>
+                            <constraint firstItem="czM-5d-VXH" firstAttribute="top" secondItem="P4w-fV-Oe8" secondAttribute="bottom" constant="8" symbolic="YES" id="utA-Ep-4lh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="classNameTextField" destination="0MJ-Y7-FL8" id="xY6-sz-ogo"/>
+                        <outlet property="classTableView" destination="IMn-7j-CTQ" id="1KD-z9-Q6p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x63-8c-NkD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,7 +149,7 @@
                                 <rect key="frame" x="153" y="591" width="72" height="30"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jf-ot-3Lr">
-                                <rect key="frame" x="16" y="15" width="34" height="30"/>
+                                <rect key="frame" x="16" y="-29" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8r-gh-Wjf">
@@ -290,7 +300,4 @@
     <resources>
         <image name="microphone.png" width="512" height="512"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="UiG-QV-ToB"/>
-    </inferredMetricsTieBreakers>
 </document>
